@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngeyen Victory - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - tailwind cdn
+  -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    header{
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/ngeyen.jpeg" alt="Ngeyen Victory" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ngeyen Victory">Ngeyen Victory</h1>
+
+          <p class="title">AI + Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:nyinkfu@andrew.cmu.edu" class="contact-link">nyinkfu@andrew.cmu.edu</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+250780800740" class="contact-link">(+250) 780 800 740</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="globe-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Website</p>
+              <a href="https://github.com/ngeyen" class="contact-link" target="_blank" rel="noopener">github.com/ngeyen</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Kigali, Rwanda</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/ngeyen" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://linkedin.com/in/ngeyen" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Applied machine learning engineer focused on making models lighter, faster, and greener. I optimize training
+            and inference to reduce compute, cost, and carbon—without sacrificing accuracy.
+          </p>
+
+          <p>
+            <strong>Current research:</strong> Equivariant neural networks for efficiency. Exploring symmetry‑adapted
+            harmonics with Allegro to cut parameters and energy use. Advised by <strong>Prof. Ismaila Dabo</strong>.
+          </p>
+
+          <ul class="list-disc list-inside space-y-2 mt-4">
+            <li><strong>Areas:</strong> Equivariant NNs, Computer Vision, NLP</li>
+            <li><strong>Methods:</strong> pruning, quantization, distillation, low‑rank adapters (LoRA), data‑efficient training, efficient serving</li>
+            <li><strong>Eval:</strong> accuracy plus params, FLOPs, latency, memory, and energy (CodeCarbon)</li>
+            <li><strong>Repo:</strong> <a href="https://github.com/ngeyen/allegro-sah" target="_blank" rel="noopener">Allegro‑SAH</a></li>
+            <li><strong>Preprint:</strong> Comparative Analysis of YOLOv5, Faster R‑CNN, SSD, and RetinaNet —
+              <a href="https://arxiv.org/abs/2510.04912" target="_blank" rel="noopener">arXiv:2510.04912</a></li>
+          </ul>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="AI icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Conversational AI</h4>
+                <p class="service-item-text">
+                  Integrations with OpenAI, Gemini, and Grok; fine‑tuning tone, structure, and guardrails for better UX and conversion.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Full‑stack icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full‑stack development</h4>
+                <p class="service-item-text">
+                  Web and mobile features with Flutter, Angular, Django, Flask, and FastAPI.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Data engineering icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data engineering</h4>
+                <p class="service-item-text">
+                  Information pipelines and large-scale processing for research and analytics (Python, Pandas, PyTorch).
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-quote.svg" alt="Teaching icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Teaching & mentorship</h4>
+                <p class="service-item-text">
+                  Recitations, coding exercises, and peer training in AI, Android, and web development.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Ricardo Powell" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ricardo Powell · CEO, RealTalkr</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Victory is a disciplined and professional software engineer. He has an incredible eye for detail and is diligent in his work.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/muramira.png" alt="Muramira Innocent" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Muramira Innocent · Founding Partner, Muramira Advocates</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Victory is an amazing software engineer. His eye for detail, skills, and professionalism are commendable. He redesigned my website and the experience has been incredible.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/dabo.png" alt="Prof. Ismaila Dabo" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Prof. Ismaila Dabo · Professor, Carnegie Mellon University</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Ngeyen is a skilled researcher—professional, responsive, passionate, and mathematically strong. I have enjoyed working with him; he makes my work easy.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/dan.png" alt="Dr. Daniel Omeiza" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Daniel Omeiza · Sr. Applied Scientist, Log10</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Victory is passionate about impacting his community. He founded the Google Developer Club at KIM University and was the first Google Crowdsource ML Facilitator at the University of Kigali. Despite challenges in his final undergraduate year, he excelled academically (top 5%) and built strong foundations in probability, statistics, calculus, numerical methods, software engineering, and AI. He is proficient in Python, Dart, Java, PHP, Angular, React, and TypeScript, and brings excellent communication and a warm personality.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/cmu.png" alt="Student Reviews" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Student Reviews · TA Semester Feedback</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Summary: very supportive and available; approachable; effective recitations and OH; clear explanations; constructive feedback; patient and a good listener.
+                    <!-- Save your chart image at: ./assets/images/ta-feedback.png -->
+                    <img src="./assets/images/ta-feedback.png" alt="TA feedback comparison chart" style="width: 100%;" loading="lazy">
+                  </figure>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Associations</h3>
+          <p>Major brands I've worked with/for</p>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/cmu_pits.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/imperial.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/bbincubator.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/muramira-logo.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/paclab.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/farmvest.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- Education (unchanged) -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">M.S. Information Technology</h4>
+              <span>Aug 2024 — 2025 · Carnegie Mellon University</span>
+              <p class="timeline-text">Specializations: Artificial Intelligence, Software Engineering.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">B.S. Computer Science</h4>
+              <span>Jan 2020 — May 2024 · University of Kigali</span>
+              <p class="timeline-text">Specializations: Computer Science, Information Systems.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">B.S. Information Technology</h4>
+              <span>Sep 2017 — Dec 2020 · KIM University</span>
+              <p class="timeline-text">Specializations: Software Engineering, Information Systems.</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Research Experience (CMU progression + research roles) -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="flask-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Research experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <!-- CMU progression -->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Graduate Admissions Assistant · Carnegie Mellon University</h4>
+              <span>Aug 2025 — Present</span>
+              <p class="timeline-text">
+                Built a pipeline for 2,000 African universities; reduced processing time by 75%.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Graduate Research Intern · Carnegie Mellon University</h4>
+              <span>Jun 2024 — Aug 2025</span>
+              <p class="timeline-text">
+                Literature review and validation of SO(3) equivariance (Allegro, DimeNet, NequIP); derived directions in equivariant NNs.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Graduate Teaching Assistant · Carnegie Mellon University</h4>
+              <span>Aug 2025 — Dec 2025</span>
+              <p class="timeline-text">
+                Led Python exercises and bi‑weekly recitations for 52 students; raised assessment averages by 15%; supported research proposals.
+              </p>
+            </li>
+
+            <!-- Other research roles -->
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Software Engineer · Universität Witten/Herdecke (Germany, Remote)</h4>
+              <span>May 2023 — Mar 2024</span>
+              <p class="timeline-text">
+                Co-led FeverApp redesign (20k+ users); built features with Flutter; worked across Laravel/Django/FastAPI.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Data Engineer · Mental Health Research (Nigeria, Remote)</h4>
+              <span>Dec 2022 — May 2023</span>
+              <p class="timeline-text">
+                Python information engine (+80% retrieval); aggregated 200+ sources into 20 mental illness categories.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant · Imperial College London (UK, Remote)</h4>
+              <span>May 2021 — Sep 2022</span>
+              <p class="timeline-text">
+                Collected and structured COVID‑19 policy data from 20+ countries (80+ sites, 500+ docs, 300+ videos; HDF4).
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Professional Experience (software engineering) -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Professional experience (software engineering)</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Conversational AI Engineer · RealTalkr.ai (UAE, Remote)</h4>
+              <span>Mar 2025 — Present</span>
+              <p class="timeline-text">
+                Integrated OpenAI, Gemini, and Grok; tuned conversational parameters; shipped UI and backend for model configuration.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer · Waysense AI (UK, Remote)</h4>
+              <span>Mar 2024 — Aug 2024</span>
+              <p class="timeline-text">
+                Developed user-facing components and core logic; researched SOTA LLMs; prototyped AR navigation features.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer · BBIncubator.org (Cameroon, Remote)</h4>
+              <span>Mar 2021 — Aug 2023</span>
+              <p class="timeline-text">
+                Led internal products (CEMP, Babo Health, Tsora Skills); achieved 95% on‑time delivery; mentored devs (+30% productivity).
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Volunteering Experience -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Volunteering experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Volunteer · Rise to Shine (Rwanda, on‑site)</h4>
+              <span>Dec 2020 — Aug 2024</span>
+              <p class="timeline-text">
+                Built and maintained the website; IT support; Child Behavioral Report system; supported online transition during COVID‑19.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">GDSC Lead · Google Developers (Rwanda, on‑site)</h4>
+              <span>Dec 2019 — Dec 2020</span>
+              <p class="timeline-text">
+                Founded the first developer club on campus; ran Android/web trainings and meetups.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Skills (unchanged) -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">PyTorch / ML stack</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Angular</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Django / Flask / FastAPI</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Engineering</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Web design</button></li>
+            <li class="filter-item"><button data-filter-btn>Applications</button></li>
+            <li class="filter-item"><button data-filter-btn>Web development</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Web design</button></li>
+              <li class="select-item"><button data-select-item>Applications</button></li>
+              <li class="select-item"><button data-select-item>Web development</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://www.farmvest.ng" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/proj_farmvest.png" alt="Farmvest" loading="lazy">
+                </figure>
+                <h3 class="project-title">Farmvest</h3>
+                <p class="project-category">Platform connecting farmers to sellers</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="https://bbincubator.org" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/bbskills.png" alt="BBIncubator brand" loading="lazy">
+                </figure>
+                <h3 class="project-title">BBIncubator.org</h3>
+                <p class="project-category">Brand image & website</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/paclab_web.png" alt="PACLAB HITMS" loading="lazy">
+                </figure>
+                <h3 class="project-title">PACLAB‑HITMS</h3>
+                <p class="project-category">E‑learning & student management</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://tega.rw" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/tega_rw.png" alt="Tega" loading="lazy">
+                </figure>
+                <h3 class="project-title">Tega.rw</h3>
+                <p class="project-category">Bus management platform</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/tsora.png" alt="Tsora Skills" loading="lazy">
+                </figure>
+                <h3 class="project-title">Tsora Skills</h3>
+                <p class="project-category">Student incubation platform</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/practice.png" alt="practiceAI" loading="lazy">
+                </figure>
+                <h3 class="project-title">practiceAI</h3>
+                <p class="project-category">Question‑answering for study</p>
+              </a>
+            </li>
+
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://www.risetoshine.rw" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/risetoshine.png" alt="Rise to Shine" loading="lazy">
+                </figure>
+                <h3 class="project-title">RiseToShine.rw</h3>
+                <p class="project-category">Website & Behavioral tracker (Django)</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/trove.png" alt="Trove" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trove</h3>
+                <p class="project-category">A social media platform with pay to access model</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/befa.png" alt="Befa Language" loading="lazy">
+                </figure>
+                <h3 class="project-title">Befa Language</h3>
+                <p class="project-category">Language learning app</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/karko.png" alt="Karko" loading="lazy">
+                </figure>
+                <h3 class="project-title">Karko</h3>
+                <p class="project-category">An e‑commerce platform</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/ndasu.png" alt="Karko" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ndasu</h3>
+                <p class="project-category">An e‑commerce platform</p>
+              </a>
+            </li>
+            
+
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="#" >
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/babo.png" alt="Babo Health" loading="lazy">
+                </figure>
+                <h3 class="project-title">Babo Health</h3>
+                <p class="project-category">Pregnancy & baby health management</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESEARCH
+      -->
+
+      <article class="blog" data-page="research">
+
+        <header>
+          <h2 class="h2 article-title">Research</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://github.com/ngeyen/allegro-sah" target="_blank" rel="noopener">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-research.png" alt="Allegro‑SAH" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Atomistic ML</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-10-12">Discovery stage</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">
+                    Symmetry‑Adapted Harmonics for Equivariant Neural Networks in Atomistic Simulations
+                  </h3>
+                  <p class="blog-text">
+                    Advisor: Prof. Ismaila Dabo. Proposal to integrate symmetry‑adapted harmonic bases with Allegro to
+                    improve data efficiency and stability in force/energy prediction. Current focus: running baseline
+                    Allegro, defining SAH features, and setting evaluation pipelines. Repo: github.com/ngeyen/allegro-sah
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PUBLICATIONS
+      -->
+
+      <article class="blog" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://arxiv.org/abs/2510.04912" target="_blank" rel="noopener">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/cv_paper.png" alt="Comparative analysis paper" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Preprint (in prep)</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-10-24">Target: Oct 24, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">
+                    Comparative Analysis of YOLOv5, Faster R‑CNN, SSD, and RetinaNet for Motorbike Detection in Kigali
+                  </h3>
+                  <p class="blog-text">
+                    Ngeyen Yinkfu, Sunday Nwovu, Jonathan Kayizzi, Angelique Uwamahoro. PyTorch transfer learning on a
+                    198‑image Kigali dataset; evaluates accuracy, localization, and speed for real‑time autonomous
+                    driving in resource‑constrained settings. Submitted to arXiv; dataset under improvement.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps?q=Kigali,+Rwanda&output=embed"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
